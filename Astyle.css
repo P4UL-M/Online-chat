@@ -1,0 +1,99 @@
+#pseudo
+{
+    outline : none;     
+    font-size: 25px; 
+    border: none;
+    text-align: center;
+    margin: 2.5%;
+    display: block;
+    align-self: center;
+    width: 85%;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+#conteneur
+{
+    width: 25%;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteneur:after
+{
+    font-style: italic;
+    align-self: center;
+    content: "Par la validation de votre pseudo vous accepter l'utilisation de cookies nécéssaire au fonctionnement du site.";
+    text-align: center;
+    font-size: 11px;
+    width: 75%;
+}
+
+#ligne_séparation
+{
+    align-self: center;
+    border: 1px black solid;
+    display: block;
+    height: 0px;
+    width: 100%;
+}
+
+#submit
+{
+    font-size: 25px;
+    cursor: pointer;
+    align-self: center;
+    margin: 2.5%;
+    width: 88%;
+    height: 35px;
+    transition: all 0.5ms;
+    border-radius:5px;
+    border: 2px solid black;
+    background:#fff;
+}
+
+#submit span 
+{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#submit span:after 
+{
+    content:'\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+#submit:hover span 
+{
+    padding-right: 25px;
+}
+  
+#submit:hover span:after 
+{
+    opacity: 1;
+    right: 0;
+}
+
+#submit:active span 
+{
+    font-size: 35px;
+    opacity: 0;
+    transition: 0.1s
+}

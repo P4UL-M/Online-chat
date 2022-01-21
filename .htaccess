@@ -1,0 +1,4 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine on
+RewriteRule ^pseudo$ /chat/index.php
+RewriteRule ^channel$ /chat/chat.php
