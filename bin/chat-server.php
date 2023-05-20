@@ -13,7 +13,7 @@ use vlucas\phpdotenv;
                 new Chat()
             )
         ),
-        8080
+        8090
     );
 
     $server->run();
